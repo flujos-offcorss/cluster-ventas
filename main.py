@@ -98,7 +98,8 @@ def aplicar_pca(df, variables_seleccionadas):
     #                     df_result['z3'] * pca.explained_variance_ratio_[2]
     
 
-    df_result['Indice'] = df_result['Indice']*(-1)
+    # df_result['Indice'] = df_result['Indice']*(-1)
+    df_result['Indice'] = df_result['Indice']*(1)
     # ---------------------------------------------------------------------------------------------------
 
     # df_result = df_result[['PUNTO_VENTA', 'COD_PUNTO_VENTA', 'CONTRIBUCION', 'ROTACION', 'VENTA_POR_MES', 'MARGEN', 'VENTA_PESOS', 'VENTA_UNDS', 'Indice']]
